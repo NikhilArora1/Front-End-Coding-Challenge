@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEDCOMPANY</title>
+
+    <!-- Bootstrap -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	  <link rel="stylesheet" type="text/css" href="styles-second.css" />
+
+  </head>
+  <body>
+
+
+    <div class="container">
+
+    	<div class="row">
+    		<div class="col-md-6-offset-3 center">
+
+    			<h3 id="header"><img src="logo.png" id="logo" /> MEDCOMPANY</h3>
+    			<p class="lead">Medcompany Efficacy Study</p>
+
+        </div>
+    	</div>
+
+    </div>
+
+
+    <div class="container contentContainer center">
+
+        	<h3>Search for a physician or organization</h3>
+
+          <form id = "inputForm" method="POST">
+        	   <input type="text" id="input" class="form-control input-lg marginTop" placeholder="Search for a doctor, physician, or organization by name"
+        	    onkeyup="delaySearch()" />
+          </form>
+
+      <div id="box">
+    		  <ul id="list" class="list-unstyled">
+
+    		  </ul>
+          <ul id="pageButtons" class="pagination">
+
+    		  </ul>
+      </div>
+
+        <p class="center" id="loading">Loading Providers...</p>
+
+    </div>
+
+    </div>
+
+
+    <div class="container footerContainer">
+    	<footer>
+        <div class="row">
+          <div class="col-md-2">
+            <a href="" id = "contactUs">Contact Us</a>
+          </div>
+          <div class="col-md-8">
+            <div class="progress center-block">
+              <div class="progress-bar" role="progressbar"
+                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                30% Complete
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+    	       <img src="foot.png" id="foot" />
+          </dv>
+      </div>
+    </footer>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- jQuery UI plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- <script type="text/javascript" src="jquery-quick-pagination/js/jquery.quick.pagination.js"></script>
+    <script type="text/javascript" src="jquery-quick-pagination/js/jquery.quick.pagination.min.js"></script> -->
+
+
+  	<script type="text/javascript" src="scripts-second.js"></script>
+
+
+
+  </body>
+</html>
